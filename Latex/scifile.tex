@@ -1,0 +1,175 @@
+% Use only LaTeX2e, calling the article.cls class and 12-point type.
+
+\documentclass[12pt]{article}
+
+% Users of the {thebibliography} environment or BibTeX should use the
+% scicite.sty package, downloadable from *Science* at
+% www.sciencemag.org/about/authors/prep/TeX_help/ .
+% This package should properly format in-text
+% reference calls and reference-list numbers.
+
+\usepackage{cite}
+\usepackage{hyperref}
+
+% Use times if you have the font installed; otherwise, comment out the
+% following line.
+\usepackage{graphicx}
+\usepackage{times}
+
+% The preamble here sets up a lot of new/revised commands and
+% environments.  It's annoying, but please do *not* try to strip these
+% out into a separate .sty file (which could lead to the loss of some
+% information when we convert the file to other formats).  Instead, keep
+% them in the preamble of your main LaTeX source file.
+
+
+% The following parameters seem to provide a reasonable page setup.
+
+\topmargin 0.0cm
+\oddsidemargin 0.2cm
+\textwidth 16cm 
+\textheight 21cm
+\footskip 1.0cm
+
+
+%The next command sets up an environment for the abstract to your paper.
+
+\newenvironment{sciabstract}{%
+\begin{quote} \bf}
+{\end{quote}}
+
+
+% If your reference list includes text notes as well as references,
+% include the following line; otherwise, comment it out.
+
+\renewcommand\refname{References and Notes}
+
+
+
+
+% Include your paper's title here
+
+\title{ {\it Uso de Star Uml como herramienta para la obtención de código a partir de un metamodelo.\/}} 
+
+
+% Place the author information here.  Please hand-code the contact
+% information and notecalls; do *not* use \footnote commands.  Let the
+% author contact information appear immediately below the author names
+% as shown.  We would also prefer that you don't change the type-size
+% settings shown here.
+
+\author
+{Adrian Coello, Luis Ricaurte, Andrew Guaman,\\
+Erick Pita, Josue Cirino
+\\
+\\
+\normalsize{}
+}
+
+% Include the date command, but leave its argument blank.
+
+\date{}
+
+
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%
+
+
+\begin{document} 
+
+% Double-space the manuscript.
+
+\baselineskip24pt
+
+% Make the title.
+
+\maketitle 
+
+
+\section*{Abstract}
+This document aims to cover the needs within the Software Modeling project, where the use of graphic modeling tools predominates, thus capturing their use and how they can benefit when applying Software engineering.
+Obtaining code from these tools will allow the work group to obtain feedback, which in turn will provide the possibility of considering the applicability of these tools to a project in the future.
+
+\section*{Resumen}
+Este documento pretende cubrir las necesidades dentro del proyecto de la materia de Modelamiento de Software, donde predomina el uso de herramientas de modelado gráfico, captando así el uso de estas y como pueden beneficiar al momento de aplicar la ingeniería de Software.
+La obtención de código a partir de estas herramientas permitirán obtener una retroalimentación al grupo de trabajo el cual a su vez brindará la posibilidad de considerar la aplicabilidad de estas herramientas a un proyecto en el futuro.
+ 
+\newpage
+
+\section*{Introducción}
+Los diagramas de clase describen los tipos de objetos de un sistema, así como los
+distintos tipos de relaciones que pueden existir entre ellos. Los diagramas de clase se
+convierten así en la técnica más potente para el modelado conceptual de un sistema
+software, la cual suele recoger los conceptos clave del modelo de objetos subyacente al
+método orientado a objetos que la incorpora.\cite{Fran2013}\\
+
+La importancia de los diagramas de clase y de los distintos tipos de diagramas UML permiten obtener una perspectiva diferente dentro del contexto de un producto y las reglas del negocio del Software. Su correcto entendimiento y aprendizaje es de suma importancia para los ingenieros en esta rama de las ciencias de la computación ya que de esta forma se logra comprender en mejor medida el trabajo colaborativo dentro de una organización con cada Spring. 
+\\\\
+La Ingeniería Inversa es una metodología que se utiliza para obtener modelos o
+duplicados a partir de un objeto de referencia. Esta metodología a menudo se
+confunde con la piratería y por lo general no es enseñada de manera formal en
+las instituciones educativas. Por otro lado, en las tareas industriales, la
+Ingeniería Inversa se aplica de manera directa o indirecta en procesos,
+máquinas y el duplicado de partes y componentes. La experiencia indica que
+en casi un 80 por ciento de las actividades de las industrias, está relacionado algún
+método de la Ingeniería Inversa.\cite{Delf2012}\\
+
+Jiménez menciona en la obra "Algunas consideraciones sobre la Ingeniería Inversa, Informe Interno de Investigación, Centro de Tecnología Avanzada de ITESCA" que la ingeniería inversa se define “como aquel proceso analítico-sintético que busca determinar las características y/o funciones
+de un sistema, una máquina o un producto o una parte de un componente o un subsistema. El
+propósito de la ingeniería inversa es determinar un modelo de un objeto o producto o sistema
+de referencia”.\cite{jim2006}\\
+
+
+La necesidad de descomponer un proyecto software se ve reflejada con la intención de obtener un diagrama de clases que permita entender el proyecto desde una perspectiva gráfica, donde se identifiquen los atributos y métodos existentes. Ya que estos permitirán la creación de diagramas de estado y de secuencia que muestren la composición de un proyecto propuesto dentro de este grupo de trabajo.
+
+
+
+
+\section*{Metodología}
+
+ Este proyecto pretende cubrir parte de los conocimientos obtenidos hasta el momento dentro de la carrera de ingeniería en software, con una aplicabilidad a las materias que serán revisadas en los próximos semestres y a su vez servir como marco de referencia o punto de partida para la creación de proyectos que requieran la aplicación de herramientas visuales para la generación de código.\\
+Dentro del grupo de trabajo, se ha planteo la descompisición del proyecto en partes, las cuales se han desarrollado progresivamente, logrando así un conjunto de información relevante dentro de este trabajo.
+Se menciona que la población se centra en nosotros como estudiantes de la carrera de ingeniería en software, donde el objeto de estudio es la forma de entender en un contexto de pruebas el modelado de software y el entendimiento de las notaciones del lenguaje UML.
+
+\section*{Resultados y Discusiones}
+
+Se propuso el uso de la herramienta Star UML, la cual cuenta con un amplio menu contextual para la creación de diagramas, además de la posibilidad de generar código dependiendo de los intereses de cada uno mediante la instalación de un plugin.\\
+El manejo de esta herramienta brindo un entendimiento de la gran capacidad que tiene la implementación de los diagramas dentro de la ingeniería en software ya que permite obtener un esquema  gráfico a nivel conceptual sobre el producto software que se trabaje dentro de un proyecto en especifíco.\\
+Sin embargo el uso de estas herramientas pueden crear falsos positivos dentro de la obtención de código o un efecto placebo, si bien es cierto, generan código a partir de un diagrama, muchas veces  este código no es completamente funcional, si no que se tiene que recurrir a realizar modificaciones para su posterior adaptabilidad y funcionamiento.
+Cabe mencionar que es importante seguir estandares para el uso de este tipo de herramientas, ya que si esto no se realiza pueden existir ciertos errores dentro de algún proyecto, como nos fue el caso con el espaciado entre nombre de funciones.
+
+
+\section*{Conclusiones}
+
+Las herramientas para el modelado de Software tienen un gran potencial en el mundo de la ingeniería en Software, sin embargo su implementación absoluta se ve mermada por las convenciones o estandares que requieren los proyectos sobre los cuales se trabaje o los lenguajes de programación sobre los cuales se basen estos.
+Como estudiantes de la carrera de ingeniería en Software de la Universidad de Guayaquil, es importante tener un conocimiento sobre el modelado de software ya que este es uno de los pilares para el entendimiento de la construcción de un buen producto Software.
+
+\section*{Anexo}
+En el siguiente enlace se encuentra un repositorio en github con los diagramas creados y el código obtenido a partir de estas herramientas\\
+\href{https://github.com/Vico2001/MDSFP}{---Click aqui para acceder al Repositorio de Github---}  
+
+\bibliographystyle{apalike}
+\bibliography{scibib}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
